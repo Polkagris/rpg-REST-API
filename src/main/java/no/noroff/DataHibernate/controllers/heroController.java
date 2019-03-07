@@ -44,9 +44,6 @@ public class heroController {
     public hero postNewHero(@ModelAttribute hero theNewHero){
         addHero(theNewHero.getHeroName(), theNewHero.getHeroLvl(), theNewHero.getHeroOwnerId(), theNewHero.getHeroClass());
 
-        // reads the DB new gamer
-        System.out.println(theNewHero);
-
         return theNewHero;
     }
 
